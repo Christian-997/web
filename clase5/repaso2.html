@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" >
+        <title>snpp</title>
+    </head>
+    <body>
+        <h1>Comprobar si un número es par o impar</h1>
+        <script>
+            // solicitar un número
+            // prompt despliega una ventana para introducir un valor,
+            // el tipo de dato es String, por lo que hay que convertirlo a número
+            while (true){
+            var numero = Number(prompt('Escriba un número: '));
+            // si es nulo enviar un alert
+            if (isNaN(numero)) {
+                alert('No es un valor valido');
+            }else{
+                if (numero == ""){
+                    alert("No ingreso ningun número")
+                    continue
+                }
+                if(numero%2 == 0){
+                  alert('El número '+ numero +' es par');            
+                }
+                else{
+                    alert('El número '+ numero +' es impar')
+                }
+            }
+        }
+        </script>
+    </body>
+</html>
