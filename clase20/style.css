@@ -1,0 +1,71 @@
+body{
+    
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+    background-image: url(resources/maiz_2.jpg);
+}
+
+h3{
+    padding-left: 3%;
+    filter: invert(1);
+    text-shadow: -1px -1px 0 white,
+     1px -1px 0 white,
+    -1px  1px 0 white,
+     1px  1px 0 white;;
+}
+
+h1{
+    color: green;
+    text-align: center;
+}
+
+#elementos{
+    padding-top: 120PX;
+    justify-content: center;
+    gap: 20%;
+    display: flex;
+}
+
+#divbrote:hover{
+height: 30%;
+transform: scale(1.2);
+}    
+
+#brote{
+    display: block;
+    padding: 25px;
+    background-color: #cf5fc6;
+    border: 3px solid #cf5fc6;
+    filter: invert(1);
+    height: 60px;
+    border-radius: 0px 40px 40px 40px
+}
+
+#divtractor:hover{
+transform: scale(1.2);
+height: 30%;
+}
+#tractor{
+    display: block;
+    padding: 25px;
+    background-color: #cf5fc6;
+    border: 3px solid #cf5fc6;
+    filter: invert(1);
+    height: 60px;
+    border-radius: 0px 40px 40px 40px
+}
+#divtecnico:hover{
+transform: scale(1.2);
+}
+#tecnico{
+    display: block;
+    padding: 25px;
+    background-color: #cf5fc6;
+    transition: 0.3s;
+    border-color: aqua;
+    border: 3px solid #cf5fc6;
+    filter: invert(1);
+    height: 60px;
+    border-radius: 0px 40px 40px 40px
+}

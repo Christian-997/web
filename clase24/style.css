@@ -1,0 +1,113 @@
+*{
+    z-index:100;
+}
+.navbar {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  background-color: #002d72;
+  padding: 1rem 2rem;
+  width: max-content;
+  text-align: center;
+  width: 600px; /* o el ancho que necesites */
+  margin: 0 auto;
+  font-size: 20px;
+}
+
+body{
+    background-color: rgb(68, 135, 161);
+    position: relative;
+}
+
+.description{
+    min-width: 40%;
+    max-width: 70%;
+}
+
+header{
+    text-align: center;
+}
+
+.navbar .logo a {
+  color: #fff;
+  font-size: 1.7rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: inline-flex;
+  gap: 3rem;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  
+}
+
+.nav-links a:hover {
+  color: #ffcc00;
+}
+
+.titulo{
+    justify-content: center;
+  align-items: center;
+    padding: auto;
+    display: inline-block;
+    color: #fff;
+}
+
+.imagen-auto{
+ 
+    width: 10%;
+}
+
+.vehiculo{
+    border: red;
+    border-radius: 20px solid red;
+    
+}
+
+.vehiculos-destacados{
+    
+    width: 600px; /* o el ancho que necesites */
+  margin: 0 auto;
+}
+
+.aside-contenedor{
+    
+    display: contents; 
+    justify-content: space-between;
+    border-radius: 10px ;
+    
+}
+
+.promociones{
+    z-index:0;
+    margin-top: -850px;
+    margin-left: 80%;
+    padding: 5px;
+    position: relative; 
+    right: 0; 
+    top: 0; 
+    width: 250px; 
+    background-color: lightgray;
+    border: 5px solid blue;
+    border-radius: 10px ;
+}
+.email{
+  background-color: #002d72;
+  font-size: medium;
+  height: 200px;
+}
+
+
+@media screen and (max-width: 700px) {
+  .promociones {
+    display: none;
+  }
+}
