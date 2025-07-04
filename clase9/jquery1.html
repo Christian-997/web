@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>uso de jquery</title>
+        <!--agrega el CDN a jQuery o descarga la librería-->
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function(){
+                $("#ocultar").click(function(){
+                    $("p").fadeOut();
+                });
+                
+                $("#ver").click(function(){
+                    $("p").fadeIn();
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <button id="ocultar">Ocultar</button>
+        <button id="ver">Ver</button>
+        <h2>Introducción a jQuery</h2>
+        <p>Haz que el título también se 
+            oculte al hacer click en el mismo
+        </p>
+    </body>
+</html>

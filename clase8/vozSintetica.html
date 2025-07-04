@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <input type="text" id="Texto" placeholder="Escribe algo">
+        <button onclick="hablar()">Hablar</button>
+    <select id="voces"></select>
+    </body>
+    <script>
+        function cargarVoces() {
+            const synth = window.speechSynthesis;
+            const vocesSelect = document.getElementById("voces");
+            const voces = synth.getVoices();
+
+            voces.forEach((voz, i) => {
+                let opcion = document.createElement("option");
+                opcion.value = i;
+                opcion.textContent = `${voz.name} (${voz.lang})`;
+                vocesSelect.appendChild(opcion);
+            });
+        }
+
+        function hablar() {
+            const texto = document.getElementById("Texto").value;
+            const vocesSelect = document.getElementById("voces");
+            const synth = window.speechSynthesis;
+            const utterance = new SpeechSynthesisUtterance(texto);
+
+            const voces = synth.getVoices();
+            utterance.voice = voces[vocesSelect.value]; // Selecciona la voz elegida
+
+            synth.speak(utterance);
+        }
+
+        window.speechSynthesis.onvoiceschanged = cargarVoces; // Cargar voces cuando estén disponibles
+    </script>
+</html>
